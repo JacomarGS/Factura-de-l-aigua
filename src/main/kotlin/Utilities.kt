@@ -301,7 +301,7 @@ fun readFloat(pMessageIn: String
 /**
  * This method can be used to read an Int value from the user through keyboard using java.util.Scanner in within a range
  * @author raimon.izard, modified by Jacomar
- * @since 15/12/2023
+ * @since Commit 2 (10/01/2024)
  * @param pMessageIn Input message to be shown to the user
  * @param pMessageErrorDT Data type error message to be shown to the user
  * @param pMessageErrorDV Data value error message to be shown to the user
@@ -341,7 +341,7 @@ fun readInt(pMessageIn: String
 /**
  * This method can be used to read a Float value from the user through keyboard using java.util.Scanner in within a range
  * @author raimon.izard, modified by Jacomar
- * @since 15/12/2023
+ * @since Commit 2 (10/01/2024)
  * @param pMessageIn Input message to be shown to the user
  * @param pMessageErrorDT Data type error message to be shown to the user
  * @param pMessageErrorDV Data value error message to be shown to the user

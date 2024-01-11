@@ -1,34 +1,45 @@
+/**
+ * Function whose purpose is to articulate the calculation functions.
+ * @author Jacomar
+ * @since 11/01/2024
+ */
 fun emetreFactura() {
-    // Llegim dades d'entrada
+    // Reading input data
     var litresConsumits:Float = llegirLitresConsumits()
     var unitatFamiliar:Boolean = llegirTipusDeUnitatFamiliar()
     var membresUnitatFamiliar:Int = if (unitatFamiliar) llegirMembresDeLaUnitatFamiliar()
                                     else 0
     var boSocial:Boolean = llegirBoSocial()
 
-    // Definim la quota fixa
+    // Defining the fixed fee
     var quotaFixa:Float = if (boSocial) 3.0f
                           else 6.0f
 
-    // Definim la quota variable
+    // Defining the variable fee
     var costDelsLitresConsumits:Float = calculantElCostDelConsum(litresConsumits)
 
-    // Definim el descompte per família nombrosa o monoparental
+    // Defining the value of the discount for large or single-parent families.
     var descompteFNM:Float = if (unitatFamiliar && membresUnitatFamiliar >= 2) aplicantElDescompteFNM(costDelsLitresConsumits, membresUnitatFamiliar)
                              else 0.0f
 
-    // Definim el descompte per bo social
+    // Defining the value of the discount for possessing the social bonus.
     var descompteBoSocial:Float = if (boSocial) aplicantElDescompteBoSocial(costDelsLitresConsumits)
                                   else 0.0f
 
-    // Calculem el total de la factura
+    // Calculating the total invoice
     var totalFactura:Float = calculantElTotalDeLaFactura (quotaFixa, costDelsLitresConsumits, descompteFNM, descompteBoSocial)
 
-    // Imprimim la factura
+    // Printing the invoice
     var factura = imprimintTotalFactura(quotaFixa, costDelsLitresConsumits, descompteFNM, descompteBoSocial, totalFactura)
     println(factura)
 }
-
+/**
+ * This function determines the cost of the variable fee based on the number of liters provided by the user.
+ * @author Jacomar
+ * @since 11/01/2024
+ * @param pLitresConsumits the number of liters provided by the user.
+ * @return Output value
+ */
 fun calculantElCostDelConsum (pLitresConsumits:Float): Float {
     return when {
         pLitresConsumits < 50f -> pLitresConsumits + 0.0f
@@ -36,7 +47,14 @@ fun calculantElCostDelConsum (pLitresConsumits:Float): Float {
         else -> pLitresConsumits * 0.30f
     }
 }
-
+/**
+ * This function determines the value of the discount for large or single-parent families.
+ * @author Jacomar
+ * @since 11/01/2024
+ * @param pCostDelsLitresConsumits the cost of the liters consumed by the user.
+ * @param pMembresUnitatFamiliar number of family members of the user.
+ * @return Output value
+ */
 fun aplicantElDescompteFNM (pCostDelsLitresConsumits: Float, pMembresUnitatFamiliar: Int): Float {
     val descompteMaxim = 0.50f
     var pDescompteFNM:Float = 0.10f * pMembresUnitatFamiliar
@@ -46,12 +64,27 @@ fun aplicantElDescompteFNM (pCostDelsLitresConsumits: Float, pMembresUnitatFamil
         pDescompteFNM * pCostDelsLitresConsumits
     }
 }
-
+/**
+ * This function determines the value of the discount for the social bonus.
+ * @author Jacomar
+ * @since 11/01/2024
+ * @param pCostDelsLitresConsumits the cost of the liters consumed by the user.
+ * @return Output value
+ */
 fun aplicantElDescompteBoSocial (pCostDelsLitresConsumits: Float): Float {
     val descompteBoSocial = 0.80f * pCostDelsLitresConsumits
     return descompteBoSocial
 }
-
+/**
+ * This function calculates the total invoice amount based on the information provided by the user.
+ * @author Jacomar
+ * @since 11/01/2024
+ * @param pQuotaFixa the fixed fee for water consumption determined by the supply company.
+ * @param pCostDelsLitresConsumits the cost of the liters consumed by the user.
+ * @param pDescompteFNM discount applied if the user confirms their status as a large or single-parent family.
+ * @param pDescompteBoSocial discount applied if the user confirms their status as having a social voucher.
+ * @return Output value
+ */
 fun calculantElTotalDeLaFactura (pQuotaFixa:Float, pCostDelsLitresConsumits:Float, pDescompteFNM:Float, pDescompteBoSocial:Float): Float {
     val totalFactura:Float = pQuotaFixa + pCostDelsLitresConsumits
     return if (pDescompteBoSocial > pDescompteFNM){

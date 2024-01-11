@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb88e040-ccc7-42fa-8db7-64a58e9f44f8" name="Changes" comment="Commit 4: Añadida la función 'calculantElCostDelConsum' al archivo 'FuncionsCalcul.kt' que nos permite calcular el coste de los litros consumidos.">
+    <list default="true" id="bb88e040-ccc7-42fa-8db7-64a58e9f44f8" name="Changes" comment="Commit 5: Añadidas las funciones 'aplicantElDescompteFNM', 'aplicantElDescomptaBoSocial' y 'calculantElTotalDeLaFactura' al archivo 'FuncionsCalcul.kt' y la función 'imprimintTotalFactura' al archivo 'FuncionsSortida.kt'. Se ha aplicado color a los textos de salida.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/FuncionsCalcul.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/FuncionsCalcul.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/FuncionsEntrada.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/FuncionsEntrada.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/FuncionsSortida.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/FuncionsSortida.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Utilities.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Utilities.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704931456004</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Commit 5: Añadidas las funciones 'aplicantElDescompteFNM', 'aplicantElDescomptaBoSocial' y 'calculantElTotalDeLaFactura' al archivo 'FuncionsCalcul.kt' y la función 'imprimintTotalFactura' al archivo 'FuncionsSortida.kt'. Se ha aplicado color a los textos de salida.">
+      <option name="closed" value="true" />
+      <created>1705008560277</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705008560281</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +148,7 @@
     <MESSAGE value="Commit 2: Añadido el archivo 'FuncionsEntrada.kt', que recoge las funciones de lectura de datos con control de errores, y modificadas algunas funciones de la librería 'Utilities.kt' para adaptarlas al proyecto." />
     <MESSAGE value="Commit 3: Añadidos los archivos 'FuncionsSortida.kt', que alberga la cabecera y los mensajes de salida de la aplicación, y 'FuncionsCalcul.kt', que contendrá las funciones mendiante las cuales se calculará el importe de la factura. También se ha estructurado el contenido del 'Main.kt'." />
     <MESSAGE value="Commit 4: Añadida la función 'calculantElCostDelConsum' al archivo 'FuncionsCalcul.kt' que nos permite calcular el coste de los litros consumidos." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 4: Añadida la función 'calculantElCostDelConsum' al archivo 'FuncionsCalcul.kt' que nos permite calcular el coste de los litros consumidos." />
+    <MESSAGE value="Commit 5: Añadidas las funciones 'aplicantElDescompteFNM', 'aplicantElDescomptaBoSocial' y 'calculantElTotalDeLaFactura' al archivo 'FuncionsCalcul.kt' y la función 'imprimintTotalFactura' al archivo 'FuncionsSortida.kt'. Se ha aplicado color a los textos de salida." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 5: Añadidas las funciones 'aplicantElDescompteFNM', 'aplicantElDescomptaBoSocial' y 'calculantElTotalDeLaFactura' al archivo 'FuncionsCalcul.kt' y la función 'imprimintTotalFactura' al archivo 'FuncionsSortida.kt'. Se ha aplicado color a los textos de salida." />
   </component>
 </project>
