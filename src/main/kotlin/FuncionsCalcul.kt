@@ -3,24 +3,61 @@ fun emetreFactura() {
     var litresConsumits:Float = llegirLitresConsumits()
     var unitatFamiliar:Boolean = llegirTipusDeUnitatFamiliar()
     var membresUnitatFamiliar:Int = if (unitatFamiliar) llegirMembresDeLaUnitatFamiliar()
-                                else 0
+                                    else 0
     var boSocial:Boolean = llegirBoSocial()
 
-    // Inicialitzem variables
+    // Definim la quota fixa
     var quotaFixa:Float = if (boSocial) 3.0f
                           else 6.0f
-    var descompteFNM:Float = if (unitatFamiliar && membresUnitatFamiliar >= 2) 0.1f * membresUnitatFamiliar
-                             else 0.0f
-    var descompteBoSocial:Float = 0.8f
 
-    //Calculem el cost del consum
+    // Definim la quota variable
     var costDelsLitresConsumits:Float = calculantElCostDelConsum(litresConsumits)
+
+    // Definim el descompte per família nombrosa o monoparental
+    var descompteFNM:Float = if (unitatFamiliar && membresUnitatFamiliar >= 2) aplicantElDescompteFNM(costDelsLitresConsumits, membresUnitatFamiliar)
+                             else 0.0f
+
+    // Definim el descompte per bo social
+    var descompteBoSocial:Float = if (boSocial) aplicantElDescompteBoSocial(costDelsLitresConsumits)
+                                  else 0.0f
+
+    // Calculem el total de la factura
+    var totalFactura:Float = calculantElTotalDeLaFactura (quotaFixa, costDelsLitresConsumits, descompteFNM, descompteBoSocial)
+
+    // Imprimim la factura
+    var factura = imprimintTotalFactura(quotaFixa, costDelsLitresConsumits, descompteFNM, descompteBoSocial, totalFactura)
+    println(factura)
 }
 
-fun calculantElCostDelConsum (plitresConsumits:Float): Float {
+fun calculantElCostDelConsum (pLitresConsumits:Float): Float {
     return when {
-        plitresConsumits < 50f -> plitresConsumits + 0.0f
-        plitresConsumits in 50f .. 200f -> plitresConsumits * 0.15f
-        else -> plitresConsumits * 0.30f
+        pLitresConsumits < 50f -> pLitresConsumits + 0.0f
+        pLitresConsumits in 50f .. 200f -> pLitresConsumits * 0.15f
+        else -> pLitresConsumits * 0.30f
     }
 }
+
+fun aplicantElDescompteFNM (pCostDelsLitresConsumits: Float, pMembresUnitatFamiliar: Int): Float {
+    val descompteMaxim = 0.50f
+    var pDescompteFNM:Float = 0.10f * pMembresUnitatFamiliar
+    return if (pDescompteFNM > descompteMaxim) {
+        descompteMaxim * pCostDelsLitresConsumits
+    } else {
+        pDescompteFNM * pCostDelsLitresConsumits
+    }
+}
+
+fun aplicantElDescompteBoSocial (pCostDelsLitresConsumits: Float): Float {
+    val descompteBoSocial = 0.80f * pCostDelsLitresConsumits
+    return descompteBoSocial
+}
+
+fun calculantElTotalDeLaFactura (pQuotaFixa:Float, pCostDelsLitresConsumits:Float, pDescompteFNM:Float, pDescompteBoSocial:Float): Float {
+    val totalFactura:Float = pQuotaFixa + pCostDelsLitresConsumits
+    return if (pDescompteBoSocial > pDescompteFNM){
+        totalFactura - pDescompteBoSocial
+    } else {
+        totalFactura - pDescompteFNM
+    }
+}
+

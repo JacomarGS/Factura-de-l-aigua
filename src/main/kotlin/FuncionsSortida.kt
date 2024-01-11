@@ -15,7 +15,7 @@ fun bannerAmbBenvinguda() {
 }
 
 fun missatgeDeGuiaPasAPas() {
-    val guiaPasAPas="""
+    val guiaPasAPas= CYAN + """
         |################################################################################
         |#                                                                              #
         |#    Per emetre la factura del consum d'aigua mensual seguiu els passos        #
@@ -43,13 +43,31 @@ fun missatgeDeGuiaPasAPas() {
         |#       descompte que més beneficiï el client.                                 #
         |#                                                                              #
         |################################################################################
-        """.trimMargin()
+        """ + RESET.trimMargin()
     println(guiaPasAPas)
+}
+
+fun imprimintTotalFactura (pQuotaFixa:Float, pCostDelsLitresConsumits:Float, pDescompteFNM:Float, pDescompteBoSocial:Float, pTotalFactura:Float) {
+    val factura = CYAN + """
+                FACTURA DEL CONSUM D'AIGUA DE L'ÚLTIM MES                 
+             ===============================================                    
+                                                                                
+             Quota fixa ............................... ${pQuotaFixa}           
+                                                                                
+             Quota variable (cost del consum) ......... ${pCostDelsLitresConsumits}
+                                                                                
+             Descompte FNM ............................ ${pDescompteFNM}
+                                                                                
+             Descompte Bo Social ...................... ${pDescompteBoSocial}
+                                                                                
+             TOTAL FACTURA                              ${pTotalFactura}
+
+        """ + RESET.trimMargin()
+    println(factura)
 }
 
 fun missatgeDeSortida() {
     println(BLUE_BOLD_BRIGHT +
-        "Gràcies per fer servir els nostres serveis.\n" +
-        "Fins a una altra ocasió!"
+        "Gràcies per fer servir els nostres serveis."
     + RESET)
 }
