@@ -5,32 +5,32 @@
  */
 fun emetreFactura() {
     // Reading input data
-    var litresConsumits:Float = llegirLitresConsumits()
-    var unitatFamiliar:Boolean = llegirTipusDeUnitatFamiliar()
-    var membresUnitatFamiliar:Int = if (unitatFamiliar) llegirMembresDeLaUnitatFamiliar()
+    val litresConsumits:Float = llegirLitresConsumits()
+    val unitatFamiliar:Boolean = llegirTipusDeUnitatFamiliar()
+    val membresUnitatFamiliar:Int = if (unitatFamiliar) llegirMembresDeLaUnitatFamiliar()
                                     else 0
-    var boSocial:Boolean = llegirBoSocial()
+    val boSocial:Boolean = llegirBoSocial()
 
     // Defining the fixed fee
-    var quotaFixa:Float = if (boSocial) 3.0f
+    val quotaFixa:Float = if (boSocial) 3.0f
                           else 6.0f
 
     // Defining the variable fee
-    var costDelsLitresConsumits:Float = calculantElCostDelConsum(litresConsumits)
+    val costDelsLitresConsumits:Float = calculantElCostDelConsum(litresConsumits)
 
     // Defining the value of the discount for large or single-parent families.
-    var descompteFNM:Float = if (unitatFamiliar && membresUnitatFamiliar >= 2) aplicantElDescompteFNM(costDelsLitresConsumits, membresUnitatFamiliar)
+    val descompteFNM:Float = if (unitatFamiliar && membresUnitatFamiliar >= 2) aplicantElDescompteFNM(costDelsLitresConsumits, membresUnitatFamiliar)
                              else 0.0f
 
     // Defining the value of the discount for possessing the social bonus.
-    var descompteBoSocial:Float = if (boSocial) aplicantElDescompteBoSocial(costDelsLitresConsumits)
+    val descompteBoSocial:Float = if (boSocial) aplicantElDescompteBoSocial(costDelsLitresConsumits)
                                   else 0.0f
 
     // Calculating the total invoice
-    var totalFactura:Float = calculantElTotalDeLaFactura (quotaFixa, costDelsLitresConsumits, descompteFNM, descompteBoSocial)
+    val totalFactura:Float = calculantElTotalDeLaFactura (quotaFixa, costDelsLitresConsumits, descompteFNM, descompteBoSocial)
 
     // Printing the invoice
-    var factura = imprimintTotalFactura(quotaFixa, costDelsLitresConsumits, descompteFNM, descompteBoSocial, totalFactura)
+    val factura = imprimintTotalFactura(quotaFixa, costDelsLitresConsumits, descompteFNM, descompteBoSocial, totalFactura)
     println(factura)
 }
 /**
@@ -57,7 +57,7 @@ fun calculantElCostDelConsum (pLitresConsumits:Float): Float {
  */
 fun aplicantElDescompteFNM (pCostDelsLitresConsumits: Float, pMembresUnitatFamiliar: Int): Float {
     val descompteMaxim = 0.50f
-    var pDescompteFNM:Float = 0.10f * pMembresUnitatFamiliar
+    val pDescompteFNM:Float = 0.10f * pMembresUnitatFamiliar
     return if (pDescompteFNM > descompteMaxim) {
         descompteMaxim * pCostDelsLitresConsumits
     } else {

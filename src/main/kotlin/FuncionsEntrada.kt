@@ -1,5 +1,5 @@
 fun llegirOpcioUsuari(): Int {
-    var controlErrorsLlegirOpcioUsuari = readInt(
+    val controlErrorsLlegirOpcioUsuari = readInt(
         pMessageIn = CYAN + "Seleccioneu una opció:\n" + "1. Emetre factura mensual.\n" + "2. Ajuda.\n" + "0. Sortir." + RESET
         , pMessageErrorDT = "Si us plau, seleccioneu 1 per emetre la vostra factura mensual, 2 per rebre ajuda o 0 per sortir de l'aplicació."
         , pMessageErrorDV = "Si us plau, seleccioneu 1 per emetre la vostra factura mensual, 2 per rebre ajuda o 0 per sortir de l'aplicació."
@@ -10,7 +10,7 @@ fun llegirOpcioUsuari(): Int {
 }
 
 fun llegirLitresConsumits(): Float {
-    var controlErrorsLlegirLitresConsumits = readFloat(
+    val controlErrorsLlegirLitresConsumits = readFloat(
         pMessageIn = CYAN + "Si us plau, introduïu el nombre de litres d'aigua que heu consumit aquest mes" + RESET
         , pMessageErrorDT = "Si us plau, introduïu només valors positius"
         , pMessageErrorDV = "Si us plau, introduïu només valors positius"
@@ -20,7 +20,7 @@ fun llegirLitresConsumits(): Float {
 }
 
 fun llegirTipusDeUnitatFamiliar(): Boolean {
-    var controlErrorsLlegirTipusUnitatFamiliar = readBoolean(
+    val controlErrorsLlegirTipusUnitatFamiliar = readBoolean(
         pMessageIn = CYAN + "Compleix la condició de família nombrosa o monoparental? Si us plau, escriviu la paraula 'true' en cas afirmatiu o 'false' en cas negatiu." + RESET
         , pMessageErrorDT = "Si us plau, escriviu la paraula 'true' en cas afirmatiu o 'false' en cas negatiu."
     )
@@ -28,7 +28,7 @@ fun llegirTipusDeUnitatFamiliar(): Boolean {
 }
 
 fun llegirMembresDeLaUnitatFamiliar(): Int {
-    var controlErrorsLlegirUnitatFamiliar = readInt(
+    val controlErrorsLlegirUnitatFamiliar = readInt(
         pMessageIn = CYAN + "Si compleix la condició de família nombrosa o monoparental, introduïu a continuació el nombre de membres de la seva unitat familiar" + RESET
         , pMessageErrorDT = "Si us plau, introduïu només valors positius sense decimals"
         , pMessageErrorDV = "Si us plau, introduïu només valors positius sense decimals"
@@ -38,7 +38,7 @@ fun llegirMembresDeLaUnitatFamiliar(): Int {
 }
 
 fun llegirBoSocial(): Boolean {
-    var controlErrorsLlegirBoSocial = readBoolean(
+    val controlErrorsLlegirBoSocial = readBoolean(
         pMessageIn = CYAN + "Disposa de bo social? Si us plau, escriviu la paraula 'true' en cas afirmatiu o 'false' en cas negatiu." + RESET
         , pMessageErrorDT = "Si us plau, escriviu la paraula 'true' en cas afirmatiu o 'false' en cas negatiu."
     )
