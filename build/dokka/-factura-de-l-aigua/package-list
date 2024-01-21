@@ -1,0 +1,38 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:////PointingToDeclaration/-factura-de-l-aigua/[root]/index.html
+$dokka.location:/ConsoleColorsKt///PointingToDeclaration/-factura-de-l-aigua/[root]/-console-colors-kt/index.html
+$dokka.location:/FuncionsCalculKt///PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-calcul-kt/index.html
+$dokka.location:/FuncionsCalculKt/aplicantElDescompteBoSocial/#kotlin.Float/PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-calcul-kt/aplicant-el-descompte-bo-social.html
+$dokka.location:/FuncionsCalculKt/aplicantElDescompteFNM/#kotlin.Float#kotlin.Int/PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-calcul-kt/aplicant-el-descompte-f-n-m.html
+$dokka.location:/FuncionsCalculKt/calculantElCostDelConsum/#kotlin.Float/PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-calcul-kt/calculant-el-cost-del-consum.html
+$dokka.location:/FuncionsCalculKt/calculantElTotalDeLaFactura/#kotlin.Float#kotlin.Float#kotlin.Float#kotlin.Float/PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-calcul-kt/calculant-el-total-de-la-factura.html
+$dokka.location:/FuncionsCalculKt/emetreFactura/#/PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-calcul-kt/emetre-factura.html
+$dokka.location:/FuncionsEntradaKt///PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-entrada-kt/index.html
+$dokka.location:/FuncionsEntradaKt/llegirBoSocial/#/PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-entrada-kt/llegir-bo-social.html
+$dokka.location:/FuncionsEntradaKt/llegirLitresConsumits/#/PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-entrada-kt/llegir-litres-consumits.html
+$dokka.location:/FuncionsEntradaKt/llegirMembresDeLaUnitatFamiliar/#/PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-entrada-kt/llegir-membres-de-la-unitat-familiar.html
+$dokka.location:/FuncionsEntradaKt/llegirOpcioUsuari/#/PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-entrada-kt/llegir-opcio-usuari.html
+$dokka.location:/FuncionsEntradaKt/llegirTipusDeUnitatFamiliar/#/PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-entrada-kt/llegir-tipus-de-unitat-familiar.html
+$dokka.location:/FuncionsSortidaKt///PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-sortida-kt/index.html
+$dokka.location:/FuncionsSortidaKt/bannerAmbBenvinguda/#/PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-sortida-kt/banner-amb-benvinguda.html
+$dokka.location:/FuncionsSortidaKt/imprimintTotalFactura/#kotlin.Float#kotlin.Float#kotlin.Float#kotlin.Float#kotlin.Float/PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-sortida-kt/imprimint-total-factura.html
+$dokka.location:/FuncionsSortidaKt/missatgeDeGuiaPasAPas/#/PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-sortida-kt/missatge-de-guia-pas-a-pas.html
+$dokka.location:/FuncionsSortidaKt/missatgeDeSortida/#/PointingToDeclaration/-factura-de-l-aigua/[root]/-funcions-sortida-kt/missatge-de-sortida.html
+$dokka.location:/MainKt///PointingToDeclaration/-factura-de-l-aigua/[root]/-main-kt/index.html
+$dokka.location:/MainKt/main/#/PointingToDeclaration/-factura-de-l-aigua/[root]/-main-kt/main.html
+$dokka.location:/UtilitiesKt///PointingToDeclaration/-factura-de-l-aigua/[root]/-utilities-kt/index.html
+$dokka.location:/UtilitiesKt/getScan/#/PointingToDeclaration/-factura-de-l-aigua/[root]/-utilities-kt/get-scan.html
+$dokka.location:/UtilitiesKt/readBoolean/#kotlin.String#kotlin.String/PointingToDeclaration/-factura-de-l-aigua/[root]/-utilities-kt/read-boolean.html
+$dokka.location:/UtilitiesKt/readChar/#kotlin.String#kotlin.String#kotlin.Int/PointingToDeclaration/-factura-de-l-aigua/[root]/-utilities-kt/read-char.html
+$dokka.location:/UtilitiesKt/readChar/#kotlin.String#kotlin.String/PointingToDeclaration/-factura-de-l-aigua/[root]/-utilities-kt/read-char.html
+$dokka.location:/UtilitiesKt/readFloat/#kotlin.String#kotlin.String#kotlin.String#kotlin.Float#kotlin.Float/PointingToDeclaration/-factura-de-l-aigua/[root]/-utilities-kt/read-float.html
+$dokka.location:/UtilitiesKt/readFloat/#kotlin.String#kotlin.String#kotlin.String#kotlin.Float/PointingToDeclaration/-factura-de-l-aigua/[root]/-utilities-kt/read-float.html
+$dokka.location:/UtilitiesKt/readFloat/#kotlin.String#kotlin.String/PointingToDeclaration/-factura-de-l-aigua/[root]/-utilities-kt/read-float.html
+$dokka.location:/UtilitiesKt/readInt/#kotlin.String#kotlin.String#kotlin.String#kotlin.Int#kotlin.Int/PointingToDeclaration/-factura-de-l-aigua/[root]/-utilities-kt/read-int.html
+$dokka.location:/UtilitiesKt/readInt/#kotlin.String#kotlin.String#kotlin.String#kotlin.Int/PointingToDeclaration/-factura-de-l-aigua/[root]/-utilities-kt/read-int.html
+$dokka.location:/UtilitiesKt/readInt/#kotlin.String#kotlin.String/PointingToDeclaration/-factura-de-l-aigua/[root]/-utilities-kt/read-int.html
+$dokka.location:/UtilitiesKt/readSentence/#kotlin.String#kotlin.String/PointingToDeclaration/-factura-de-l-aigua/[root]/-utilities-kt/read-sentence.html
+$dokka.location:/UtilitiesKt/readWord/#kotlin.String#kotlin.String/PointingToDeclaration/-factura-de-l-aigua/[root]/-utilities-kt/read-word.html
+
+

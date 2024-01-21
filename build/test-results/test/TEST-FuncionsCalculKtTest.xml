@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FuncionsCalculKtTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-01-21T20:39:20" hostname="Ubuntu-Jacomar" time="0.04">
+  <properties/>
+  <testcase name="testCalculantElCostDelConsumMenysDe50Litres()" classname="FuncionsCalculKtTest" time="0.022"/>
+  <testcase name="testAplicantElDescompteBoSocial()" classname="FuncionsCalculKtTest" time="0.001"/>
+  <testcase name="testCalculantElCostDelConsumMesDe200Litres()" classname="FuncionsCalculKtTest" time="0.001"/>
+  <testcase name="testCalculantElCostDelConsumEntre50i200Litres()" classname="FuncionsCalculKtTest" time="0.002"/>
+  <testcase name="testAplicantElDescompteFNMDescompteMayor()" classname="FuncionsCalculKtTest" time="0.002"/>
+  <testcase name="testAplicantElDescompteFNMDescompteMenor()" classname="FuncionsCalculKtTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
