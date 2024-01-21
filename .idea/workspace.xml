@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb88e040-ccc7-42fa-8db7-64a58e9f44f8" name="Changes" comment="Commit 9: Generado el Dokka del proyecto y modificado el archivo '.gitignore' para poder subir la carpeta 'dokka' al repositorio de GitHub.">
+    <list default="true" id="bb88e040-ccc7-42fa-8db7-64a58e9f44f8" name="Changes" comment="Commit 10: Nueva modificación en el archivo '.gitignore' para poder subir la carpeta 'dokka' al repositorio de GitHub.">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -301,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705871195940</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Commit 10: Nueva modificación en el archivo '.gitignore' para poder subir la carpeta 'dokka' al repositorio de GitHub.">
+      <option name="closed" value="true" />
+      <created>1705872253451</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1705872253451</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -326,6 +334,7 @@
     <MESSAGE value="Commit 7: Modificadas las dependencias del archivo 'build.gradle.kts' para instalar JUnit5 y creado el fichero 'FuncionsCalculKtTest.kt' para hacer unit testing sobre las funciones del archivo 'FuncionsCalcul.kt'." />
     <MESSAGE value="Commit 8: Corregida la sintaxis de las funciones de testeo y añadidos nuevos tests al archivo 'FuncionsCalculKtTest.kt' para hacer unit testing sobre las funciones del archivo 'FuncionsCalcul.kt'." />
     <MESSAGE value="Commit 9: Generado el Dokka del proyecto y modificado el archivo '.gitignore' para poder subir la carpeta 'dokka' al repositorio de GitHub." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 9: Generado el Dokka del proyecto y modificado el archivo '.gitignore' para poder subir la carpeta 'dokka' al repositorio de GitHub." />
+    <MESSAGE value="Commit 10: Nueva modificación en el archivo '.gitignore' para poder subir la carpeta 'dokka' al repositorio de GitHub." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 10: Nueva modificación en el archivo '.gitignore' para poder subir la carpeta 'dokka' al repositorio de GitHub." />
   </component>
 </project>
