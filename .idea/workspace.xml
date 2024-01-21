@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb88e040-ccc7-42fa-8db7-64a58e9f44f8" name="Changes" comment="Commit 7: Modificadas las dependencias del archivo 'build.gradle.kts' para instalar JUnit5 y creado el fichero 'FuncionsCalculKtTest.kt' para hacer unit testing sobre las funciones del archivo 'FuncionsCalcul.kt'.">
+    <list default="true" id="bb88e040-ccc7-42fa-8db7-64a58e9f44f8" name="Changes" comment="Commit 8: Corregida la sintaxis de las funciones de testeo y añadidos nuevos tests al archivo 'FuncionsCalculKtTest.kt' para hacer unit testing sobre las funciones del archivo 'FuncionsCalcul.kt'.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/FuncionsCalcul.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/FuncionsCalcul.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/FuncionsCalculKtTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/FuncionsCalculKtTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705018220392</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Commit 8: Corregida la sintaxis de las funciones de testeo y añadidos nuevos tests al archivo 'FuncionsCalculKtTest.kt' para hacer unit testing sobre las funciones del archivo 'FuncionsCalcul.kt'.">
+      <option name="closed" value="true" />
+      <created>1705869851383</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1705869851383</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,6 +318,7 @@
     <MESSAGE value="Commit 5: Añadidas las funciones 'aplicantElDescompteFNM', 'aplicantElDescomptaBoSocial' y 'calculantElTotalDeLaFactura' al archivo 'FuncionsCalcul.kt' y la función 'imprimintTotalFactura' al archivo 'FuncionsSortida.kt'. Se ha aplicado color a los textos de salida." />
     <MESSAGE value="Commit 6: Añadidos comentarios en formato Kdoc a las funciones del archivo 'FuncionsCalcul.kt'." />
     <MESSAGE value="Commit 7: Modificadas las dependencias del archivo 'build.gradle.kts' para instalar JUnit5 y creado el fichero 'FuncionsCalculKtTest.kt' para hacer unit testing sobre las funciones del archivo 'FuncionsCalcul.kt'." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 7: Modificadas las dependencias del archivo 'build.gradle.kts' para instalar JUnit5 y creado el fichero 'FuncionsCalculKtTest.kt' para hacer unit testing sobre las funciones del archivo 'FuncionsCalcul.kt'." />
+    <MESSAGE value="Commit 8: Corregida la sintaxis de las funciones de testeo y añadidos nuevos tests al archivo 'FuncionsCalculKtTest.kt' para hacer unit testing sobre las funciones del archivo 'FuncionsCalcul.kt'." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 8: Corregida la sintaxis de las funciones de testeo y añadidos nuevos tests al archivo 'FuncionsCalculKtTest.kt' para hacer unit testing sobre las funciones del archivo 'FuncionsCalcul.kt'." />
   </component>
 </project>
