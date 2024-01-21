@@ -1,4 +1,7 @@
 .gradle
+build/
+!build/dokka
+!build/kotlin
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/

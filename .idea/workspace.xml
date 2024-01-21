@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb88e040-ccc7-42fa-8db7-64a58e9f44f8" name="Changes" comment="Commit 11: Nueva modificación en el archivo '.gitignore' para poder subir la carpeta 'dokka' al repositorio de GitHub.">
+    <list default="true" id="bb88e040-ccc7-42fa-8db7-64a58e9f44f8" name="Changes" comment="Commit 12: Nueva modificación en el archivo '.gitignore' para poder subir la carpeta 'dokka' al repositorio de GitHub.">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -317,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705873018096</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Commit 12: Nueva modificación en el archivo '.gitignore' para poder subir la carpeta 'dokka' al repositorio de GitHub.">
+      <option name="closed" value="true" />
+      <created>1705873823956</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1705873823956</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -344,6 +352,7 @@
     <MESSAGE value="Commit 9: Generado el Dokka del proyecto y modificado el archivo '.gitignore' para poder subir la carpeta 'dokka' al repositorio de GitHub." />
     <MESSAGE value="Commit 10: Nueva modificación en el archivo '.gitignore' para poder subir la carpeta 'dokka' al repositorio de GitHub." />
     <MESSAGE value="Commit 11: Nueva modificación en el archivo '.gitignore' para poder subir la carpeta 'dokka' al repositorio de GitHub." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 11: Nueva modificación en el archivo '.gitignore' para poder subir la carpeta 'dokka' al repositorio de GitHub." />
+    <MESSAGE value="Commit 12: Nueva modificación en el archivo '.gitignore' para poder subir la carpeta 'dokka' al repositorio de GitHub." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 12: Nueva modificación en el archivo '.gitignore' para poder subir la carpeta 'dokka' al repositorio de GitHub." />
   </component>
 </project>
