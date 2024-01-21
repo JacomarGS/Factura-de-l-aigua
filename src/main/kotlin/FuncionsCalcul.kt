@@ -1,3 +1,5 @@
+import kotlin.math.roundToLong
+
 /**
  * Function whose purpose is to articulate the calculation functions.
  * @author Jacomar
